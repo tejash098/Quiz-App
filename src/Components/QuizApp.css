@@ -1,0 +1,82 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 { color: #333; }
+
+/* Buttons General */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Start/Next/Restart Buttons */
+.Menu button, .EndScreen button, .next-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.Menu button:hover, .EndScreen button:hover, .next-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Quiz Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options button {
+  background-color: #eef1f4;
+  color: #333;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.options button:hover {
+  background-color: #dbe2ea;
+}
+
+.options button.selected {
+  background-color: #d1e7dd;
+  border: 2px solid #0f5132;
+  color: #0f5132;
+}
+
+/* Timer */
+.timer {
+  background: #ffecb3;
+  color: #d35400;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
