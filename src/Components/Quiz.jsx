@@ -8,7 +8,7 @@ const Quiz = ({ setMode, setScore, score }) => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(prev => {
+      setTimeLeft((prev) => {
         if (prev === 0) {
           nextQuestion();
           return 10;
@@ -66,13 +66,10 @@ const Quiz = ({ setMode, setScore, score }) => {
         </button>
       </div>
       <button className="next-btn" onClick={nextQuestion}>
-        {currQuestion === QuizData.length - 1
-          ? "Finish Quiz"
-          : "Next Question"}
+        {currQuestion === QuizData.length - 1 ? "Finish Quiz" : "Next Question"}
       </button>
     </div>
   );
 };
 
 export default Quiz;
-  

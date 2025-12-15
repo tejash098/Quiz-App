@@ -9,7 +9,9 @@ const End = ({ setScore, setMode, score, totalQuestions }) => {
   return (
     <div className="EndScreen">
       <h2>Quiz Finished!</h2>
-      <h3>Your Score: {score} / {totalQuestions}</h3>
+      <h3>
+        Your Score: {score} / {totalQuestions}
+      </h3>
       <button onClick={restartQuiz}>Restart Quiz</button>
     </div>
   );

@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Menu = ({setMode}) => {    
+const Menu = ({ setMode }) => {
   return (
     <>
-        <div className="Menu">
-            <h2>Welcome to the Quiz</h2>
-            <button onClick={() => setMode("quiz")}>Start Quiz</button>
-        </div>
+      <div className="Menu">
+        <h2>Welcome to the Quiz</h2>
+        <button onClick={() => setMode("quiz")}>Start Quiz</button>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
